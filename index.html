@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .section {
+            width: 80%; 
+            margin: auto;
+        }
+
+        .head {
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .cell:nth-child(even) {
+            /* border: 1px solid; */
+            background-color: rgba(0,0,0,0.1);
+        }
+
+        .cell {
+            display: flex;
+            height: 25px;
+        }
+
+        .cell div {
+            /* height: 100%; */
+            width: 50%;
+            border: 1px solid;
+            padding: 5px;
+            font-size: 0.8rem;
+        }
+
+        .cell.hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="head">Location Frequency</div>
+        <div class="table">
+            <div class="cell hide">
+                <div class="title"></div>
+                <div class="num"></div>
+            </div>
+        </div>
+    </div>
+    <script src="locations.js"></script>
+</body>
+</html> 
